@@ -1,0 +1,19 @@
+#pagerank-client {
+	width: 50px;
+	height: 19px !important;
+	max-height: 19px !important;
+	background: center 0 no-repeat url(data:image/gif;base64,R0lGODlhKAD3APIAAAAAAFKTUl6qXpmZmf///wAAAAAAAAAAACH5BAEAAAUALAAAAAAoAPcAAAP+WLrc/jDKSasEDV+gVZ9fETqcaDHhmGnswnWlF5sy+no4TeYt3cc90efm4xFZGFiGxyyiZEOoDamUWk/YrHbLrQy+4LB4TC6LCei0es1uu9Hft3zujtPvdLN+v+/6/4CBgSp+US4uhFgzVTV/STk6QVwtkpJbMEEvRJNPkZ2ch4aQgomCpqcUfKqrdniuba2vsnADs7YErLl6qLy9voq9m5ApMyeMmJ+lD8efnsBNh9E6FlUpyVnVS9LKy0ArQ8Wgv+PkuuZjt7Ox6Xfr7HPn8V/k9PWo3OLb35fWjcOX2kYxejZq2kBjzQxKIzhNYcEKR/YhwgfCnsVT8uIJEBD+4F2eARs7epTzJYDJkSQzmrvIsiW1YOEOCnv5z58zgAKv4WwoimJAnjoZAtWnSBPPYjN3ulx6QqW5jVA5olzzJWrIqWpKmtwqEisup7mYihXrs2i/o2VrRurZZSBbLYt+Hnx29iZNJwvnUog4pa+jsYAlgM1l1WpXj1ULQz38TivXx1MHswpM2V5aoTLDGev5Fpgohw33qs35EITRoaMJ1tULsaCwpHAry1YgeZVixYzVgbxtuPGAx8C5+q7dZ7bxe7w0db6CcIdN1hFOk05NV+5CbK6D3rW0nJo3v8zzHRdLnA9v3rnb7T5fOP3H4PCF6y5vZrx9QJe9BySWfwT+MqLNWQegd3E1Ax0E2Rh4nWjQTHcZXxOB19Z9Y9GnB3vnuVfHehi294pj8YX4oYVlUGhibPdIZ5cQ+QGI1IJ3gbZigKvByGB2AwaI2oytuYaUZiie2BKJZXSIoYZpJGYkeu+F6KR8KREphpBU3njKTJk96GJ3N7qlHYHXcVlRg6CllWBeNm7A3Y8tJlQlPVKOsaSR7ik5Z4YbPqknZLDEGcabgDqX4ln8BXmMmBcMiKia3H1ZnYKl9bjjgQhmKaF4gf7iZxh3znmYnZ2y9+lve5YK5VebDpDpqmliFlOYQK4Q1H/UCXrTZ5SWiWOtAuLloJVn/qqmX4VG+BervaQSCmqoHQawLLOigmjqtM4qe1ECADs=);
+}
+
+#pagerank-client[rank='na'] { background-position: center -19px; }
+#pagerank-client[rank='0'] { background-position: center -38px; }
+#pagerank-client[rank='1'] { background-position: center -57px; }
+#pagerank-client[rank='2'] { background-position: center -76px; }
+#pagerank-client[rank='3'] { background-position: center -95px; }
+#pagerank-client[rank='4'] { background-position: center -114px; }
+#pagerank-client[rank='5'] { background-position: center -133px; }
+#pagerank-client[rank='6'] { background-position: center -152px; }
+#pagerank-client[rank='7'] { background-position: center -171px; }
+#pagerank-client[rank='8'] { background-position: center -190px; }
+#pagerank-client[rank='9'] { background-position: center -209px; }
+#pagerank-client[rank='10']	{ background-position: center -228px; }

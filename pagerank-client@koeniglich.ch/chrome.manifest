@@ -1,0 +1,2 @@
+content pagerank-client chrome/content/
+overlay	chrome://browser/content/browser.xul chrome://pagerank-client/content/pagerank-client.xul

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://pagerank-client/content/pagerank-client.css" type="text/css" ?>
+<overlay id="pagerank-client-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://pagerank-client/content/pagerank-client.js" />
+	<script type="application/x-javascript" src="chrome://pagerank-client/content/lib/privatebrowsinglistener.js" />
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="pagerank-client" tooltiptext="PageRank" class="statusbarpanel-iconic" context="pagerank-client-menu" />
+	</toolbarpalette>
+	<popupset>
+		<menupopup id="pagerank-client-menu">
+	  		<menuitem id="pagerank-client-menu-toggle" label="Disabled" command="pagerank-client-toggle" />
+			<menuitem id="pagerank-client-menu-clear" label="Clear Cache" command="pagerank-client-clear" />
+			<menuseparator />
+			<menuitem id="pagerank-client-menu-about" label="About..." command="pagerank-client-about" />
+		</menupopup>
+	</popupset>
+	<commandset>
+		<command id="pagerank-client-about" oncommand="PageRankClient.about();" />
+		<command id="pagerank-client-toggle" oncommand="PageRankClient.toggle();" />
+		<command id="pagerank-client-clear" oncommand="PageRankClient.clearCache();" />
+	</commandset>
+</overlay>
