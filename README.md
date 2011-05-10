@@ -12,6 +12,10 @@ Features
 * Automatically disabled in private browsing mode
 * Source code publicly available on GitHub: [pstadler/ff-pagerank-client](https://github.com/pstadler/ff-pagerank-client "PageRank Client for Firefox on GitHub")
 
+Screenshot
+-------
+![PageRank Client in the Add-on Bar](https://static-cdn.addons.mozilla.net/img/uploads/previews/full/57/57704.png?modified=1305013190 "PageRank Client in the Add-on Bar")
+
 Credits
 -------
 * Icons by [raketforskning.com](http://livepr.raketforskning.com)
