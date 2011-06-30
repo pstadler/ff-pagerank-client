@@ -19,7 +19,7 @@ var PageRankClient = {
 	_resultCache: {},
 	_defaultTooltipText: null,
 	_clickListener: function(event) { if(event.button === 0) { PageRankClient.toggle(); } },
-	_focusListener: function() { PageRankClient.log(window._content.document.location); PageRankClient.getPR(); },
+	_focusListener: function() { PageRankClient.getPR(); },
 
 	init: function() {
 		this._preferences = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService).getBranch("extensions.pagerank-client.");
@@ -52,7 +52,7 @@ var PageRankClient = {
 	},
 	
 	getPR: function() {
-		var location = window._content.document.location;
+		var location = window._content.document.location.href;
 		if(this._resultCache[location] !== undefined) {
 			this.updatePane(this._resultCache[location]);
 		} else {
@@ -76,8 +76,8 @@ var PageRankClient = {
 	
 	request: function(uri) {
 		this._request = new XMLHttpRequest();
-		this._request.open("GET", this._service.uri + '/' + uri, true);
-		this._request.setRequestHeader('User-Agent', navigator.userAgent + ' pagerank-client');
+		this._request.open('GET', 'http://toolbarqueries.google.com/search?client=navclient-auto&ch=' + GooglePageRank.CheckHash(GooglePageRank.HashURL(uri)) + '&features=Rank&q=info:' + uri, true);
+		this._request.setRequestHeader('User-Agent', navigator.userAgent + ' pagerank-client'); 
 		this._request.onreadystatechange = this.handleResponse.bind(this);
 		this._request.send(null);
 	},
@@ -171,7 +171,7 @@ var PageRankClient = {
 	},
 	
 	about: function() {
-		window.open('http://pagerank.koeniglich.ch/?ref-ff', 'pagerank-client-about');
+		window.open(this._service.uri + '/?ref=ff', 'pagerank-client-about');
 	},
 	
 	log: function(msg) {
@@ -190,4 +190,3 @@ window.addEventListener('load', function() {
 		onExitPrivateBrowsing: function() { PageRankClient.init(); }
 	};
 }, true);
-

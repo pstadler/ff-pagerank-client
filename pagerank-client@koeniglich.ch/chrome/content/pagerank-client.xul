@@ -2,10 +2,11 @@
 <?xml-stylesheet href="chrome://pagerank-client/content/pagerank-client.css" type="text/css" ?>
 <overlay id="pagerank-client-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 	<script type="application/x-javascript" src="chrome://pagerank-client/content/pagerank-client.js" />
+	<script type="application/x-javascript" src="chrome://pagerank-client/content/lib/googlepagerank.js" />
 	<script type="application/x-javascript" src="chrome://pagerank-client/content/lib/privatebrowsinglistener.js" />
-	<toolbarpalette id="BrowserToolbarPalette">
-		<toolbarbutton id="pagerank-client" tooltiptext="PageRank" class="statusbarpanel-iconic" context="pagerank-client-menu" />
-	</toolbarpalette>
+	<statusbar id="status-bar">
+		<statusbarpanel id="pagerank-client" tooltiptext="PageRank" class="statusbarpanel-menu-iconic" context="pagerank-client-menu" />
+	</statusbar>
 	<popupset>
 		<menupopup id="pagerank-client-menu">
 	  		<menuitem id="pagerank-client-menu-toggle" label="Disabled" command="pagerank-client-toggle" />

@@ -3,8 +3,7 @@ PageRank Client for Firefox
 
 A simple Firefox extension for displaying the Google PageRank of the websites you're visiting.
 
-Please note: The extension calls pagerank.koeniglich.ch in order to calculate the search query. However NO data of you will be collected.
-The source code of the server application is available on GitHub: [pstadler/pagerank-service](https://github.com/pstadler/pagerank-service "PageRank Service on GitHub")
+There's also a web service available on [pagerank.koeniglich.ch](http://pagerank.koeniglich.ch "Get the Google PageRank") ([source](https://github.com/pstadler/pagerank-service "PageRank Service on GitHub")).
 
 Features
 --------
