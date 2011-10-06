@@ -76,7 +76,7 @@ var PageRankClient = {
 	
 	request: function(uri) {
 		this._request = new XMLHttpRequest();
-		this._request.open('GET', 'http://toolbarqueries.google.com/search?client=navclient-auto&ch=' + GooglePageRank.CheckHash(GooglePageRank.HashURL(uri)) + '&features=Rank&q=info:' + uri, true);
+		this._request.open('GET', 'http://toolbarqueries.google.com/tbr?client=navclient-auto&ch=' + GooglePageRank.CheckHash(GooglePageRank.HashURL(uri)) + '&features=Rank&q=info:' + uri, true);
 		this._request.setRequestHeader('User-Agent', navigator.userAgent + ' pagerank-client'); 
 		this._request.onreadystatechange = this.handleResponse.bind(this);
 		this._request.send(null);
